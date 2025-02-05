@@ -1,0 +1,416 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 80px; /* Adjust according to the navbar height */
+}
+
+section {
+    scroll-margin-top: 100px; /* Same as padding-top to prevent overlap */
+}
+
+.navbar {
+    background: linear-gradient(to right, #35a74d, #40da63); /* Beautiful Green Gradient */
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+.nav-link {
+    color: white !important; /* White text for contrast */
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.btn-login {
+    background: #e0e6df;
+    border: 2px solid #e0e6df; /* Added border */
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-login:hover {
+    background: #404140;
+    color: white;
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Glow effect */
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero{
+    min-height: 88vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./../images/software.PNG);
+    background-position: center;
+    background-size: cover;
+}
+
+.textbox{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* SO that it will be on the center of this div*/
+    text-align: center;
+}
+
+.textbox h1{
+    font-size: 62px;
+    font-weight: bold;
+}
+
+.textbox p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: white;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;  /* so that line won't be displayed below it*/
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #f45c36;
+    background-color: #f44c36b2;
+    color: black;
+    transition: 1s;
+}
+
+@media(max-width: 700px) {
+    .textbox h1 {
+        font-size: 40px;
+    }
+    .textbox p{
+        font-size: 15px;
+    }
+    .hero-btn {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+}
+
+/* About section */
+.about {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background-color: #232423ee;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    line-height: 170%;
+    padding-bottom: 30px;
+}
+.about .container h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.about-container {
+    width: 80%;
+}
+
+/* Services */
+.services {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.services .container h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.row2 {
+    justify-content: center;
+}
+
+/* ************************* */
+
+
+/* Product Section */
+
+.products {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    background-color: #6169611a;
+    padding-bottom: 30px;
+}
+
+.products .container h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* ************************* */
+
+/* Projects Section */
+
+.projects {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.projects .container h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+.projects .container {
+    padding: 0 15px; /* Add a bit of padding to ensure cards are not against the sides */
+}
+
+.projects .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects .col-lg-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.projects .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%; /* Ensures that the cards will be the same width */
+    max-width: 350px; /* Max width for consistency */
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow added here */
+}
+
+.project-abstract {
+    display: none;
+}
+
+.projects .card h4 {
+    flex-grow: 1; /* Makes the heading take up available space */
+}
+
+.projects .card button {
+    align-self: flex-end;
+    border: 1px solid transparent; /* Border around text only */
+    padding: 5px 15px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.projects .card button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Ensures all cards are the same height */
+.projects .col-lg-4 {
+    display: flex;
+}
+
+.projects .card {
+    height: 100%;
+}
+
+/* Makes sure cards have the same width across all screen sizes */
+@media (max-width: 991px) {
+    .projects .col-lg-4 {
+        width: 100%; /* Each card takes up full width on smaller screens */
+    }
+}
+
+/* ************************* */
+
+/* Research Section */
+
+.research {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.research-card {
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow added here */
+}
+
+.research .container h2 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* ************************* */
+
+/* Team */
+.team {
+    padding: 20px 20px; /* Adds space from both sides */
+    text-align: center;
+}
+
+.team-section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.team-container {
+    display: grid;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+/* Responsive Grid */
+@media (min-width: 1024px) {
+    .team-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .team-container {
+        grid-template-columns: repeat(2, 1fr); /* 1 card per row */
+    }
+}
+
+@media (max-width: 767px) {
+    .team-container {
+        grid-template-columns: 1fr; /* 1 card per row */
+    }
+}
+
+.team-member {
+    background: #ffffff96;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+/* Circular Image */
+.image-wrapper {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+    border: 4px solid #ddd;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-name{
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.member-desc {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Social Media Icons */
+.social-media img {
+    width: 2rem;
+    height: 2rem;
+    transition: opacity 0.3s;
+}
+
+.social-media img:hover {
+    opacity: 0.7;
+}
+
+
+
+/* ************************* */
+
+/* Contact */
+.contact {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background-color: #6f756f3d;
+    padding-bottom: 30px;
+}
+
+.contact h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    
+}
+
+.contact-container {
+    width: 80%;
+    margin: auto;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mail-address, .ph-no {
+    font-weight: bold;
+}
+
+.contact-img {
+    padding: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+
+.footer-content {
+    text-align: center;
+
+}
