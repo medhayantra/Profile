@@ -69,19 +69,19 @@ section {
 }
 
 .textbox h1{
-    font-size: 62px;
+    font-size: 4rem;
     font-weight: bold;
 }
 
 .first-slogan{
     margin: 10px 0 40px;
-    font-size: 2.5rem;
+    font-size: 1.25rem;
     color: white;
 }
 
 .second-slogan {
     margin: 30px 0 40px;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: white;  
     font-weight: bold;
     margin-top: 1rem
@@ -89,7 +89,7 @@ section {
 
 .third-slogan {
     margin: 10px 0 40px;
-    font-size: 2.5rem;
+    font-size: 1.25rem;
     color: white;  
     margin-bottom: 0;
 }
