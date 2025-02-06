@@ -73,12 +73,25 @@ section {
     font-weight: bold;
 }
 
-.textbox p{
+.textbox first-slogan{
     margin: 10px 0 40px;
     font-size: 20px;
     color: white;
 }
 
+.textbox .second-slogan {
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: white;  
+    font-weight: bold;
+}
+
+.textbox .third-slogan {
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: white;  
+}
+    
 .hero-btn{
     display: inline-block;
     text-decoration: none;  /* so that line won't be displayed below it*/
